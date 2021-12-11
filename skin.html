@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html id="__hELLO" lang="ko" data-theme="[##_var_theme_##]">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>[##_page_title_##] — [##_title_##]</title>
+    <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]">
+    <script async src="//kit.fontawesome.com/65f7e05682.js"></script>
+    <script defer src="//cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+    <script defer src="//cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://ka-f.fontawesome.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-ligature-full.css" media="print" onload="this.media='all'">
+    <link id="__hljs" rel="stylesheet" href="#">
+    <script>
+      var $ = tjQuery;
+    </script>
+    <script>
+      window.H = {};
+      window.H.skinOptions = {
+        indexWidth: '[##_var_index-width_##]',
+        articleWidth: '[##_var_article-width_##]',
+        guestbookWidth: '[##_var_guestbook-width_##]',
+        tagCloudWidth: '[##_var_tagcloud-width_##]',
+        theme: '[##_var_theme_##]',
+        hljsLight: '[##_var_hljs-light_##]',
+        hljsDark: '[##_var_hljs-dark_##]',
+        noticeListMode: '[##_var_notice-image-mode_##]',
+        listImageMode: '[##_var_list-image-mode_##]',
+        articleImageMode: '[##_var_article-image-mode_##]',
+        switchTheme: '[##_var_switch-theme_##]',
+        toTop: '[##_var_to-top_##]',
+        sidebar: '[##_var_sidebar_##]',
+        foldableCategory: '[##_var_foldable-category_##]',
+        scrollspy: '[##_var_scrollspy_##]',
+        author: '[##_var_author_##]',
+        related: '[##_var_related_##]',
+        notify: '[##_var_notify_##]',
+        message: '[##_var_message_##]',
+        messageRequest: '[##_var_message-request_##]',
+        messageHeart: '[##_var_message-heart_##]',
+        messageUnheart: '[##_var_message-unheart_##]',
+        messageSubscribe: '[##_var_message-subscribe_##]',
+        messageUnsubscribe: '[##_var_message-unsubscribe_##]',
+        messageUrl: '[##_var_message-url_##]'
+      };
+    </script>
+    <script>
+      $('html').attr('data-theme', localStorage.TTDARK ? localStorage.TTDARK === 'Y' ? 'dark' : 'light' : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : $('html').attr('data-theme'));
+    </script>
+    <style>
+      :root {
+        --h-article-width: [##_var_article-width_##]px;
+        --h-index-width: [##_var_index-width_##]px;
+        --h-guestbook-width: [##_var_guestbook-width_##]px;
+        --h-tagcloud-width: [##_var_tagcloud-width_##]px;
+      }
+    </style>
+    <script defer src="./images/vendor.427161a7e40ac82d4183.js"></script>
+    <script defer src="./images/app.427161a7e40ac82d4183.js"></script>
+    <script defer src="./images/script.nhZF3o0uUrvWxHkz2gO6.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body id="[##_body_id_##]" data-sidebar-default="[##_var_sidebar_##]">
+    <div id="__loader">
+      <div class="la-ball-clip-rotate uk-position-center">
+        <div></div>
+      </div>
+    </div>
+    <s_t3>
+      <div id="__tidory">
+        <aside id="__sidebar">
+          <div class="__">
+            <div class="___">
+              <s_sidebar>
+                <s_sidebar_element>
+                  <!-- 프로필-->
+                  <div class="profile"><img class="thumbnail lazyload" data-src="[##_image_##]" data-sizes="auto" width="100" height="100" alt="[##_blogger_##]">
+                    <div class="title"><a href="[##_blog_link_##]">[##_title_##]</a></div>
+                    <div class="blogger">[##_blogger_##]</div>
+                  </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 방문자 수-->
+                  <div class="counter">
+                    <div class="total">
+                      <div class="cnt-item">
+                        <div class="title">전체 방문자</div>
+                        <div class="cnt">[##_count_total_##]</div>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <div class="cnt-item">
+                        <div class="title">오늘</div>
+                        <div class="cnt">[##_count_today_##]</div>
+                      </div>
+                      <div class="cnt-item">
+                        <div class="title">어제</div>
+                        <div class="cnt">[##_count_yesterday_##]</div>
+                      </div>
+                    </div>
+                  </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 검색-->
+                  <div class="search">
+                    <s_search>
+                      <div class="uk-search uk-search-default"><span uk-search-icon=""></span><label for="search">검색</label><input class="uk-search-input" id="search" type="search" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"></div>
+                    </s_search>
+                  </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 카테고리-->
+                  <nav class="category">[##_category_list_##]</nav>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 블로그 메뉴-->
+                  <nav class="blogmenu">
+                    <h2>블로그 메뉴</h2>[##_blog_menu_##]
+                  </nav>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 공지사항-->
+                  <div class="notice"><a href="/notice">
+                      <h2>공지사항</h2>
+                    </a>
+                    <s_rct_notice>
+                      <ul>
+                        <s_rct_notice_rep>
+                          <li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></li>
+                        </s_rct_notice_rep>
+                      </ul>
+                    </s_rct_notice>
+                  </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 인기 글-->
+                  <nav class="popular-posts">
+                    <h2>인기 글</h2>
+                    <ul>
+                      <s_rctps_popular_rep>
+                        <li>
+                          <div class="metainfo"><a class="title" href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+                            <div class="date">[##_rctps_rep_simple_date_##]</div>
+                          </div>
+                          <s_rctps_rep_thumbnail><img class="thumbnail lazyload" data-src="[##_rctps_rep_thumbnail_##]" data-sizes="auto" width="60" height="45" alt="[##_rctps_rep_title_##]"></s_rctps_rep_thumbnail>
+                        </li>
+                      </s_rctps_popular_rep>
+                    </ul>
+                  </nav>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 태그-->
+                  <div class="tags"><a href="/tag">
+                      <h2>태그</h2>
+                    </a>
+                    <ul>
+                      <s_random_tags>
+                        <li><i class="fa fa-hashtag" aria-hidden="true"></i><a class="[##_tag_class_##]" href="[##_tag_link_##]">[##_tag_name_##]</a></li>
+                      </s_random_tags>
+                    </ul>
+                  </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 최근 댓글-->
+                  <div class="recent-comments">
+                    <h2>최근 댓글</h2>
+                    <ul>
+                      <s_rctrp_rep>
+                        <li><a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
+                          <div class="metainfo">
+                            <div class="author">[##_rctrp_rep_name_##]</div>
+                          </div>
+                        </li>
+                      </s_rctrp_rep>
+                    </ul>
+                  </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 최근 글-->
+                  <div class="recent-posts">
+                    <h2>최근 글</h2>
+                    <ul>
+                      <s_rctps_rep>
+                        <li>
+                          <div class="metainfo"><a class="title" href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+                            <div class="date">[##_rctps_rep_simple_date_##]</div>
+                          </div>
+                          <s_rctps_rep_thumbnail><img class="thumbnail lazyload" data-src="[##_rctps_rep_thumbnail_##]" data-sizes="auto" width="60" height="45" alt="[##_rctps_rep_title_##]"></s_rctps_rep_thumbnail>
+                        </li>
+                      </s_rctps_rep>
+                    </ul>
+                  </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 티스토리-->
+                  <div class="tistory">
+                    <h2>티스토리</h2>
+                  </div>
+                </s_sidebar_element>
+              </s_sidebar>
+              <div class="copyright">
+                <!--이 부분은 스킨 소개페이지 및 제작자의 깃허브 링크로 이동됩니다.
+hELLO 는 무료인 만큼, 링크의 주소는 반드시 지켜주시기 바랍니다.--><a href="https://pronist.tistory.com/5">hELLO</a> · Designed By <a href="https://github.com/pronist">정상우</a>.
+              </div>
+            </div>
+          </div>
+          <div class="overlay" uk-toggle="target: #__sidebar; cls: opened"></div>
+        </aside>
+        <nav class="uk-navbar-container uk-navbar-transparent" id="__nav" uk-navbar="">
+          <div class="left uk-navbar-left"><img class="profile lazyload" data-src="[##_image_##]" data-sizes="auto" alt="[##_blogger_##]" width="40" height="40" uk-toggle="target: #__sidebar; cls: opened"></div>
+          <div class="center uk-navbar-center">
+            <h1 class="title">[##_title_##]</h1>
+          </div>
+          <div class="right uk-navbar-right"></div>
+        </nav>
+        <main id="__main">
+          <s_cover_group>
+            <s_cover_rep>
+              <s_cover name="default">
+                <section class="list cover" data-mode="default">
+                  <h1>[##_cover_title_##]</h1>
+                  <ul>
+                    <s_cover_item>
+                      <li class="item"><a class="img" href="[##_cover_item_url_##]">
+                          <s_cover_item_thumbnail><img class="thumbnail lazyload" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt="[##_cover_item_title_##]"></s_cover_item_thumbnail>
+                        </a>
+                        <s_cover_item_article_info>
+                          <div class="description">
+                            <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            <div class="date"><time>[##_cover_item_simple_date_##]</time></div>
+                            <p class="summary">[##_cover_item_summary_##]</p>
+                          </div>
+                        </s_cover_item_article_info>
+                        <s_cover_item_not_article_info>
+                          <div class="description">
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            <p class="summary">[##_cover_item_summary_##]</p>
+                          </div>
+                        </s_cover_item_not_article_info>
+                      </li>
+                    </s_cover_item>
+                  </ul>
+                </section>
+              </s_cover>
+              <s_cover name="list">
+                <section class="list cover" data-mode="list">
+                  <h1>[##_cover_title_##]</h1>
+                  <ul>
+                    <s_cover_item>
+                      <li class="item"><a class="img" href="[##_cover_item_url_##]">
+                          <s_cover_item_thumbnail><img class="thumbnail lazyload" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt="[##_cover_item_title_##]"></s_cover_item_thumbnail>
+                        </a>
+                        <s_cover_item_article_info>
+                          <div class="description">
+                            <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            <div class="date"><time>[##_cover_item_simple_date_##]</time></div>
+                            <p class="summary">[##_cover_item_summary_##]</p>
+                          </div>
+                        </s_cover_item_article_info>
+                        <s_cover_item_not_article_info>
+                          <div class="description">
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            <p class="summary">[##_cover_item_summary_##]</p>
+                          </div>
+                        </s_cover_item_not_article_info>
+                      </li>
+                    </s_cover_item>
+                  </ul>
+                </section>
+              </s_cover>
+              <s_cover name="grid">
+                <section class="list cover" data-mode="grid">
+                  <h1>[##_cover_title_##]</h1>
+                  <ul class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="">
+                    <s_cover_item>
+                      <li class="item"><a class="img" href="[##_cover_item_url_##]">
+                          <s_cover_item_thumbnail><img class="thumbnail lazyload" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt="[##_cover_item_title_##]"></s_cover_item_thumbnail>
+                        </a>
+                        <s_cover_item_article_info>
+                          <div class="description">
+                            <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            <div class="date"><time>[##_cover_item_simple_date_##]</time></div>
+                            <p class="summary">[##_cover_item_summary_##]</p>
+                          </div>
+                        </s_cover_item_article_info>
+                        <s_cover_item_not_article_info>
+                          <div class="description">
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            <p class="summary">[##_cover_item_summary_##]</p>
+                          </div>
+                        </s_cover_item_not_article_info>
+                      </li>
+                    </s_cover_item>
+                  </ul>
+                </section>
+              </s_cover>
+              <s_cover name="gallery">
+                <section class="list cover" data-mode="gallery">
+                  <h1>[##_cover_title_##]</h1>
+                  <ul class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="">
+                    <s_cover_item>
+                      <li class="item"><a class="img" href="[##_cover_item_url_##]">
+                          <s_cover_item_thumbnail><img class="thumbnail lazyload" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt="[##_cover_item_title_##]"></s_cover_item_thumbnail>
+                        </a>
+                        <s_cover_item_article_info>
+                          <div class="description">
+                            <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                          </div>
+                        </s_cover_item_article_info>
+                        <s_cover_item_not_article_info>
+                          <div class="description">
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                          </div>
+                        </s_cover_item_not_article_info>
+                      </li>
+                    </s_cover_item>
+                  </ul>
+                </section>
+              </s_cover>
+              <s_cover name="zigzag">
+                <section class="list cover" data-mode="zigzag">
+                  <h1>[##_cover_title_##]</h1>
+                  <ul>
+                    <s_cover_item>
+                      <li class="item"><a class="img" href="[##_cover_item_url_##]">
+                          <s_cover_item_thumbnail><img class="thumbnail lazyload" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt="[##_cover_item_title_##]"></s_cover_item_thumbnail>
+                        </a>
+                        <s_cover_item_article_info>
+                          <div class="description">
+                            <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            <div class="date"><time>[##_cover_item_simple_date_##]</time></div>
+                            <p class="summary">[##_cover_item_summary_##]</p>
+                          </div>
+                        </s_cover_item_article_info>
+                        <s_cover_item_not_article_info>
+                          <div class="description">
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            <p class="summary">[##_cover_item_summary_##]</p>
+                          </div>
+                        </s_cover_item_not_article_info>
+                      </li>
+                    </s_cover_item>
+                  </ul>
+                </section>
+              </s_cover>
+              <s_cover name="slideshow">
+                <section class="slide cover uk-position-relative uk-visible-toggle uk-light" data-mode="slideshow" tabindex="-1" uk-slideshow="min-height: 280; max-height: 280; autoplay: true; animation: fade">
+                  <h1>[##_cover_title_##]</h1>
+                  <ul class="uk-slideshow-items">
+                    <s_cover_item>
+                      <li class="item"><a class="img" href="[##_cover_item_url_##]">
+                          <s_cover_item_thumbnail><img class="thumbnail lazyload" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt="[##_cover_item_title_##]" uk-cover=""></s_cover_item_thumbnail>
+                        </a>
+                        <div class="uk-overlay-primary uk-position-cover"></div>
+                        <s_cover_item_article_info>
+                          <div class="description uk-position-center uk-position-small">
+                            <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                          </div>
+                        </s_cover_item_article_info>
+                        <s_cover_item_not_article_info>
+                          <div class="description uk-position-center uk-position-small">
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                          </div>
+                        </s_cover_item_not_article_info>
+                      </li>
+                    </s_cover_item>
+                  </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="" uk-slideshow-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="" uk-slideshow-item="next"></a>
+                </section>
+              </s_cover>
+              <s_cover name="slideshow-screen">
+                <section class="slide cover uk-position-relative uk-visible-toggle uk-light" data-mode="slideshow-screen" tabindex="-1" uk-slideshow="autoplay: true; animation: fade">
+                  <h1>[##_cover_title_##]</h1>
+                  <ul class="uk-slideshow-items">
+                    <s_cover_item>
+                      <li class="item"><a class="img" href="[##_cover_item_url_##]">
+                          <s_cover_item_thumbnail><img class="thumbnail lazyload" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt="[##_cover_item_title_##]" uk-cover=""></s_cover_item_thumbnail>
+                        </a>
+                        <div class="uk-overlay-primary uk-position-cover"></div>
+                        <s_cover_item_article_info>
+                          <div class="description uk-position-center uk-position-small">
+                            <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                          </div>
+                        </s_cover_item_article_info>
+                        <s_cover_item_not_article_info>
+                          <div class="description uk-position-center uk-position-small">
+                            <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                          </div>
+                        </s_cover_item_not_article_info>
+                      </li>
+                    </s_cover_item>
+                  </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="" uk-slideshow-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="" uk-slideshow-item="next"></a>
+                </section>
+              </s_cover>
+              <s_cover name="slider">
+                <section class="slider cover" data-mode="slider">
+                  <h1>[##_cover_title_##]</h1>
+                  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="finite: true; autoplay: true" style="max-height: 520px; height: 520px">
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m">
+                      <s_cover_item>
+                        <li class="item"><a class="img" href="[##_cover_item_url_##]">
+                            <s_cover_item_thumbnail><img class="thumbnail lazyload" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt="[##_cover_item_title_##]" style="max-height: 520px; height: 520px;"></s_cover_item_thumbnail>
+                          </a>
+                          <div class="uk-overlay-primary uk-position-cover"></div>
+                          <s_cover_item_article_info>
+                            <div class="description uk-position-center uk-panel">
+                              <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                              <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            </div>
+                          </s_cover_item_article_info>
+                          <s_cover_item_not_article_info>
+                            <div class="description uk-position-center uk-panel">
+                              <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            </div>
+                          </s_cover_item_not_article_info>
+                        </li>
+                      </s_cover_item>
+                    </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="" uk-slider-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="" uk-slider-item="next"></a>
+                  </div>
+                </section>
+              </s_cover>
+              <s_cover name="slider-screen">
+                <section class="slider cover" data-mode="slider-screen">
+                  <h1>[##_cover_title_##]</h1>
+                  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="finite: true; autoplay: true" style="min-height: 100vh">
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m">
+                      <s_cover_item>
+                        <li class="item"><a class="img" href="[##_cover_item_url_##]">
+                            <s_cover_item_thumbnail><img class="thumbnail lazyload" data-src="[##_cover_item_thumbnail_##]" data-sizes="auto" alt="[##_cover_item_title_##]" style="min-height: 100vh;"></s_cover_item_thumbnail>
+                          </a>
+                          <div class="uk-overlay-primary uk-position-cover"></div>
+                          <s_cover_item_article_info>
+                            <div class="description uk-position-center uk-panel">
+                              <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                              <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            </div>
+                          </s_cover_item_article_info>
+                          <s_cover_item_not_article_info>
+                            <div class="description uk-position-center uk-panel">
+                              <h2 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h2>
+                            </div>
+                          </s_cover_item_not_article_info>
+                        </li>
+                      </s_cover_item>
+                    </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="" uk-slider-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="" uk-slider-item="next"></a>
+                  </div>
+                </section>
+              </s_cover>
+            </s_cover_rep>
+          </s_cover_group>
+          <s_guest>
+            <div id="__guestbook">
+              <h1>방명록</h1>
+              <s_guest_input_form>
+                <div class="guest-form form">
+                  <div class="__"><label for="comment">댓글</label><textarea id="comment" name="[##_guest_textarea_body_##]"></textarea>
+                    <div class="guest-form-control form-control">
+                      <s_guest_member>
+                        <div class="inputs">
+                          <s_guest_form>
+                            <div class="guest">
+                              <div class="name"><label for="name">이름</label><input id="name" name="[##_guest_input_name_##]" value="[##_guest_name_##]"></div>
+                              <div class="password"><label for="password">암호</label><input id="password" type="password" maxlength="8" name="[##_guest_input_password_##]" value="[##_guest_password_##]"></div>
+                            </div>
+                          </s_guest_form>
+                        </div>
+                      </s_guest_member>
+                      <div class="submit"><input id="secret" type="checkbox" name="[##_guest_input_is_secret_##]"><label id="secret-label" for="secret"></label><a href="#" onclick="[##_guest_onclick_submit_##]">댓글쓰기</a></div>
+                    </div>
+                  </div>
+                </div>
+              </s_guest_input_form>
+              <s_guest_container>
+                <div class="guest-list comments">
+                  <ol uk-accordion="multiple: true; toggle: .control > .more; content: > ol; animation: false; targets: > li[id^=comment]">
+                    <s_guest_rep>
+                      <li id="[##_guest_rep_id_##]">
+                        <div class="[##_guest_rep_class_##]">
+                          <div class="header">
+                            <div class="user">
+                              <div class="pic"><img class="lazyload" data-src="[##_guest_rep_logo_##]" data-sizes="auto" width="48" height="48"></div>
+                              <div class="metainfo">
+                                <div class="name">[##_guest_rep_name_##]</div><time class="date">[##_guest_rep_date_##]</time>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body">[##_guest_rep_desc_##]</div>
+                          <div class="control"><a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a><a href="#" onclick="[##_guest_rep_onclick_reply_##]">댓글쓰기</a><a class="more" href="#">댓글보기</a></div>
+                        </div>
+                        <s_guest_reply_container>
+                          <ol>
+                            <s_guest_reply_rep>
+                              <li id="[##_guest_rep_id_##]">
+                                <div class="[##_guest_rep_class_##]">
+                                  <div class="header">
+                                    <div class="user">
+                                      <div class="pic"><img class="lazyload" data-src="[##_guest_rep_logo_##]" data-sizes="auto" width="48" height="48"></div>
+                                      <div class="metainfo">
+                                        <div class="name">[##_guest_rep_name_##]</div><time class="date">[##_guest_rep_date_##]</time>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="body">[##_guest_rep_desc_##]</div>
+                                  <div class="control"><a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a></div>
+                                </div>
+                              </li>
+                            </s_guest_reply_rep>
+                          </ol>
+                        </s_guest_reply_container>
+                      </li>
+                    </s_guest_rep>
+                  </ol>
+                </div>
+              </s_guest_container>
+            </div>
+          </s_guest>
+          <s_article_rep>
+            <s_permalink_article_rep>
+              <div id="permalink_article">
+                <div class="article permalink" data-mode="[##_var_article-image-mode_##]">
+                  <header class="header">
+                    <s_article_rep_thumbnail>
+                      <div class="img">
+                        <div class="mask"></div><img class="thumbnail lazyload" data-src="[##_article_rep_thumbnail_url_##]" data-sizes="auto" alt="[##_article_rep_title_##]">
+                      </div>
+                    </s_article_rep_thumbnail>
+                    <div class="heading"><a class="category" href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                      <h1 class="title">[##_article_rep_title_##]</h1>
+                      <div class="metainfo"><time class="date">[##_article_rep_date_##]</time><span class="admin">
+                          <s_ad_div><span class="update"><a href="[##_s_ad_m_link_##]">수정</a></span><span class="delete"><a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a></span><span class="state"><a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s1_label_##]</a></span></s_ad_div>
+                        </span></div>
+                    </div>
+                  </header>
+                  <article class="content">[##_article_rep_desc_##]<s_if_var_scrollspy>
+                      <div id="__spy">
+                        <div class="__">
+                          <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; offset: 65"></ul>
+                        </div>
+                      </div>
+                    </s_if_var_scrollspy>
+                  </article>
+                  <footer class="footer">
+                    <s_if_var_related>
+                      <s_article_related>
+                        <div class="related"><strong>'[##_article_rep_category_##]' 카테고리의 다른 글</strong>
+                          <ul>
+                            <s_article_related_rep>
+                              <li><a href="[##_article_related_rep_link_##]">[##_article_related_rep_title_##]</a></li>
+                            </s_article_related_rep>
+                          </ul>
+                        </div>
+                      </s_article_related>
+                    </s_if_var_related>
+                    <s_tag_label>
+                      <div class="tags">[##_tag_label_rep_##]</div>
+                    </s_tag_label>
+                    <s_if_var_author>
+                      <div class="author"><img class="profile lazyload" data-src="[##_image_##]" data-sizes="auto" width="80" height="80" alt="[##_blogger_##]">
+                        <div class="description">
+                          <div class="user">[##_blogger_##]</div>
+                          <div class="desc">[##_desc_##]</div>
+                        </div>
+                      </div>
+                    </s_if_var_author>
+                  </footer>
+                </div>
+                <s_rp>
+                  <s_rp_input_form>
+                    <div class="rp-form form">
+                      <div class="__"><label for="comment">댓글</label><textarea id="comment" name="[##_rp_input_comment_##]"></textarea>
+                        <div class="rp-form-control form-control">
+                          <s_rp_member>
+                            <div class="inputs">
+                              <s_rp_guest>
+                                <div class="guest">
+                                  <div class="name"><label for="name">이름</label><input id="name" name="[##_rp_input_name_##]" value="[##_guest_name_##]"></div>
+                                  <div class="password"><label for="password">암호</label><input id="password" type="password" maxlength="8" name="[##_rp_input_password_##]" value="[##_guest_password_##]"></div>
+                                </div>
+                              </s_rp_guest>
+                            </div>
+                          </s_rp_member>
+                          <div class="submit"><input id="secret" type="checkbox" name="[##_rp_input_is_secret_##]"><label id="secret-label" for="secret"></label><a href="#" onclick="[##_rp_onclick_submit_##]">댓글쓰기</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </s_rp_input_form>
+                  <s_rp_container>
+                    <div class="rp-list comments">
+                      <ol uk-accordion="multiple: true; toggle: .control > .more; content: > ol; animation: false; targets: > li[id^=comment]">
+                        <s_rp_rep>
+                          <li id="[##_rp_rep_id_##]">
+                            <div class="[##_rp_rep_class_##]">
+                              <div class="header">
+                                <div class="user">
+                                  <div class="pic"><img class="lazyload" data-src="[##_rp_rep_logo_##]" data-sizes="auto" width="48" height="48"></div>
+                                  <div class="metainfo">
+                                    <div class="name">[##_rp_rep_name_##]</div><time class="date">[##_rp_rep_date_##]</time>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="body">[##_rp_rep_desc_##]</div>
+                              <div class="control"><a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a><a href="#" onclick="[##_rp_rep_onclick_reply_##]">댓글쓰기</a><a class="more" href="#">댓글보기</a></div>
+                            </div>
+                            <s_rp2_container>
+                              <ol>
+                                <s_rp2_rep>
+                                  <li id="[##_rp_rep_id_##]">
+                                    <div class="[##_rp_rep_class_##]">
+                                      <div class="header">
+                                        <div class="user">
+                                          <div class="pic"><img class="lazyload" data-src="[##_rp_rep_logo_##]" data-sizes="auto" width="48" height="48"></div>
+                                          <div class="metainfo">
+                                            <div class="name">[##_rp_rep_name_##]</div><time class="date">[##_rp_rep_date_##]</time>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="body">[##_rp_rep_desc_##]</div>
+                                      <div class="control"><a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a></div>
+                                    </div>
+                                  </li>
+                                </s_rp2_rep>
+                              </ol>
+                            </s_rp2_container>
+                          </li>
+                        </s_rp_rep>
+                      </ol>
+                    </div>
+                  </s_rp_container>
+                </s_rp>
+                <s_if_var_notify>
+                  <s_article_next><a class="notify uk-box-shadow-medium" href="[##_article_next_link_##]" id="next">
+                      <s_article_next_thumbnail><img class="thumbnail lazyload" src="[##_article_next_thumbnail_link_##]" alt="[##_article_next_title_##]"></s_article_next_thumbnail>
+                      <div class="metainfo">
+                        <div class="description">다음 글</div>
+                        <div class="title">[##_article_next_title_##]</div>
+                      </div>
+                    </a></s_article_next>
+                  <s_article_prev><a class="notify uk-box-shadow-medium" href="[##_article_prev_link_##]" id="prev">
+                      <s_article_prev_thumbnail><img class="thumbnail lazyload" src="[##_article_prev_thumbnail_link_##]" alt="[##_article_prev_title_##]"></s_article_prev_thumbnail>
+                      <div class="metainfo">
+                        <div class="description">이전 글</div>
+                        <div class="title">[##_article_prev_title_##]</div>
+                      </div>
+                    </a></s_article_prev>
+                </s_if_var_notify>
+              </div>
+            </s_permalink_article_rep>
+            <s_page_rep>
+              <div id="page">
+                <div class="article permalink" data-mode="[##_var_article-image-mode_##]">
+                  <header class="header">
+                    <s_article_rep_thumbnail>
+                      <div class="img">
+                        <div class="mask"></div><img class="thumbnail lazyload" data-src="[##_article_rep_thumbnail_url_##]" data-sizes="auto" alt="[##_article_rep_title_##]">
+                      </div>
+                    </s_article_rep_thumbnail>
+                    <div class="heading">
+                      <h1 class="title">[##_article_rep_title_##]</h1>
+                      <div class="metainfo"><time class="date">[##_article_rep_date_##]</time></div>
+                    </div>
+                  </header>
+                  <article class="content">[##_article_rep_desc_##]<s_if_var_scrollspy>
+                      <div id="__spy">
+                        <div class="__">
+                          <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; offset: 65"></ul>
+                        </div>
+                      </div>
+                    </s_if_var_scrollspy>
+                  </article>
+                  <footer class="footer">
+                    <s_if_var_author>
+                      <div class="author"><img class="profile lazyload" data-src="[##_image_##]" data-sizes="auto" width="80" height="80" alt="[##_blogger_##]">
+                        <div class="description">
+                          <div class="user">[##_blogger_##]</div>
+                          <div class="desc">[##_desc_##]</div>
+                        </div>
+                      </div>
+                    </s_if_var_author>
+                  </footer>
+                </div>
+              </div>
+            </s_page_rep>
+            <s_article_protected>
+              <div id="__protected">
+                <s_permalink_article_rep>
+                  <div class="protected permalink" data-mode="default">
+                    <header class="header">
+                      <div class="heading"><a class="category" href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                        <h1 class="title">[##_article_rep_title_##]</h1>
+                        <div class="metainfo"><time class="date">[##_article_rep_date_##]</time></div>
+                      </div>
+                    </header>
+                    <div class="uk-text-center">
+                      <p class="text">보호되어 있는 글입니다.<br>내용을 보시려면 비밀번호를 입력하세요.</p><input class="input uk-input" type="password" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" placeholder="비밀번호">
+                    </div>
+                  </div>
+                </s_permalink_article_rep>
+              </div>
+            </s_article_protected>
+          </s_article_rep>
+          <s_notice_rep>
+            <div id="__notice">
+              <s_index_article_rep>
+                <section class="list" data-mode="[##_var_notice-list-mode_##]">
+                  <header>
+                    <div class="heading">
+                      <h1 class="title">공지사항</h1>
+                    </div>
+                  </header>
+                  <ul>
+                    <div class="item">
+                      <div class="img"><a href="[##_notice_rep_link_##]">
+                          <s_notice_rep_thumbnail><img class="thumbnail lazyload" data-src="[##_notice_rep_thumbnail_url_##]" data-sizes="auto" alt="[##_notice_rep_title_##]"></s_notice_rep_thumbnail>
+                        </a></div>
+                      <div class="description">
+                        <h1 class="title"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h1>
+                        <div class="date"><time>[##_notice_rep_date_##]</time></div>
+                        <p class="summary">[##_notice_rep_summary_##]</p>
+                      </div>
+                    </div>
+                  </ul>
+                </section>
+              </s_index_article_rep>
+              <s_permalink_article_rep>
+                <div id="permalink_article">
+                  <div class="notice permalink" data-mode="[##_var_article-image-mode_##]">
+                    <header class="header">
+                      <s_notice_rep_thumbnail>
+                        <div class="img">
+                          <div class="mask"></div><img class="thumbnail lazyload" data-src="[##_notice_rep_thumbnail_url_##]" data-sizes="auto" alt="[##_notice_rep_title_##]">
+                        </div>
+                      </s_notice_rep_thumbnail>
+                      <div class="heading">
+                        <h1 class="title">[##_notice_rep_title_##]</h1>
+                        <div class="metainfo"><time class="date">[##_notice_rep_date_##]</time></div>
+                      </div>
+                    </header>
+                    <article class="content">[##_notice_rep_desc_##]<s_if_var_scrollspy>
+                        <div id="__spy">
+                          <div class="__">
+                            <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; offset: 65"></ul>
+                          </div>
+                        </div>
+                      </s_if_var_scrollspy>
+                    </article>
+                    <footer class="footer">
+                      <s_if_var_author>
+                        <div class="author"><img class="profile lazyload" data-src="[##_image_##]" data-sizes="auto" width="80" height="80" alt="[##_blogger_##]">
+                          <div class="description">
+                            <div class="user">[##_blogger_##]</div>
+                            <div class="desc">[##_desc_##]</div>
+                          </div>
+                        </div>
+                      </s_if_var_author>
+                    </footer>
+                  </div>
+                </div>
+              </s_permalink_article_rep>
+            </div>
+          </s_notice_rep>
+          <s_tag>
+            <div id="__tags">
+              <h1>태그 클라우드</h1>
+              <ul>
+                <s_tag_rep>
+                  <li><a class="[##_tag_class_##]" href="[##_tag_link_##]">[##_tag_name_##]</a></li>
+                </s_tag_rep>
+              </ul>
+            </div>
+          </s_tag>
+          <s_list>
+            <section class="list" data-mode="[##_list_style_##]" data-image-mode="[##_var_list-image-mode_##]">
+              <header>
+                <s_list_image>
+                  <div class="img">
+                    <div class="mask"></div><img class="thumbnail lazyload" data-src="[##_list_image_##]" data-sizes="auto" alt="[##_list_conform_##]">
+                  </div>
+                </s_list_image>
+                <div class="heading">
+                  <h1 class="title">[##_list_conform_##]</h1>
+                </div>
+              </header>
+              <ul>
+                <s_list_rep>
+                  <div class="item">
+                    <div class="img"><a href="[##_list_rep_link_##]">
+                        <s_list_rep_thumbnail><img class="thumbnail lazyload" data-src="[##_list_rep_thumbnail_##]" data-sizes="auto" alt="[##_list_rep_title_##]"></s_list_rep_thumbnail>
+                      </a></div>
+                    <div class="description">
+                      <div class="category"><a href="[##_list_rep_category_link_##]">[##_list_rep_category_##]</a></div>
+                      <h1 class="title"><a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a></h1>
+                      <div class="date"><time>[##_list_rep_regdate_##]</time></div>
+                      <p class="summary">[##_list_rep_summary_##]</p>
+                    </div>
+                  </div>
+                </s_list_rep>
+              </ul>
+            </section>
+          </s_list>
+          <s_paging>
+            <ul class="uk-pagination uk-flex-center" id="__paging" uk-margin="">
+              <li><a class="[##_no_more_prev_##] prev" [##_prev_page_##]=""><span uk-pagination-previous=""></span>이전</a></li>
+              <s_paging_rep>
+                <li><a [##_paging_rep_link_##]="">[##_paging_rep_link_num_##]</a></li>
+              </s_paging_rep>
+              <li><a class="[##_no_more_next_##] next" [##_next_page_##]="">다음<span uk-pagination-next=""></span></a></li>
+            </ul>
+          </s_paging>
+        </main>
+        <footer class="uk-navbar-container uk-navbar-transparent" id="__footer" uk-navbar="">
+          <div class="uk-navbar-right"><button class="theme-btn">테마 바꾸기<i class="fa fa-moon" aria-hidden="true"></i></button><button class="toTop" uk-scroll="target: #__hELLO">제일 위로<i class="fa fa-chevron-up"></i></button></div>
+        </footer>
+      </div>
+    </s_t3>
+    <div id="scroll-indicator">
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </body>
+
+</html>
